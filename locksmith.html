@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/7 Emergency Locksmith Services | Auto Keys, Lockouts & Security</title>
+    <meta name="description" content="Professional 24/7 emergency locksmith services. Car key replacement, lockout assistance, lock repair, and security system installation. Call (855) 945-5052 now!">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #ffcc00;
+            color: #333;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #e6b800;
+            transform: translateY(-2px);
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+        
+        .nav-menu {
+            display: flex;
+        }
+        
+        .nav-menu li {
+            margin-left: 25px;
+        }
+        
+        .nav-menu a {
+            transition: color 0.3s ease;
+        }
+        
+        .nav-menu a:hover {
+            color: #ffcc00;
+        }
+        
+        .call-btn {
+            background-color: #ffcc00;
+            color: #2c3e50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .call-btn:hover {
+            background-color: #fff;
+            color: #2c3e50;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1593455134888-2775d8ede5c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero .btn {
+            font-size: 1.1rem;
+            padding: 15px 30px;
+            margin: 10px;
+        }
+        
+        .phone-number {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #ffcc00;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .phone-number:hover {
+            background-color: rgba(0,0,0,0.7);
+            transform: scale(1.05);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #2c3e50;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-img {
+            height: 200px;
+            background-color: #ddd;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .service-content {
+            padding: 20px;
+        }
+        
+        .service-content h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        /* Auto Key Services Special Section */
+        .auto-services {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .auto-services-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .auto-services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .auto-service-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .auto-service-item h3 {
+            color: #2c3e50;
+            margin: 15px 0;
+        }
+        
+        .key-icon {
+            font-size: 40px;
+            color: #ffcc00;
+        }
+        
+        /* Reviews Section */
+        .reviews {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+        
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .review-card {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .review-text {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .reviewer {
+            display: flex;
+            align-items: center;
+        }
+        
+        .reviewer-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin-right: 15px;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        /* Call to Action */
+        .cta {
+            padding: 80px 0;
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+        
+        .cta h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            color: #ffcc00;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a:hover {
+            color: #ffcc00;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+            }
+            
+            .nav-menu {
+                margin: 20px 0;
+            }
+            
+            .nav-menu li {
+                margin: 0 10px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .phone-number {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">SecureLock Locksmith</div>
+            <ul class="nav-menu">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#auto-keys">Auto Keys</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="tel:8559455052" class="call-btn">Call Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>24/7 Emergency Locksmith & Auto Key Services</h1>
+            <p>Fast, reliable, and professional locksmith solutions for residential, commercial, and automotive needs. Specialists in car key replacement and programming.</p>
+            <a href="#contact" class="btn">Get Help Now</a>
+            <div class="phone-number" onclick="window.location.href='tel:8559455052'">(855) 945-5052</div>
+            <p>Click to call immediately</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Comprehensive locksmith services for all your security needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1557275357-072b6d7c1002?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="service-content">
+                        <h3>Emergency Lockout Service</h3>
+                        <p>24/7 emergency response for lockouts from homes, offices, or vehicles. Our technicians arrive quickly to get you back in safely.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1580522154071-c6ca47a859ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="service-content">
+                        <h3>Lock Repair & Replacement</h3>
+                        <p>Expert repair and replacement of all types of locks. We work with all brands and models to ensure your security.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1603083059952-522d5e24753a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="service-content">
+                        <h3>Key Duplication</h3>
+                        <p>Precision key cutting and duplication services for all types of keys, including high-security and transponder keys.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Auto Key Services Section -->
+    <section class="auto-services" id="auto-keys">
+        <div class="container">
+            <div class="auto-services-header">
+                <h2>Auto Key & Car Lock Services</h2>
+                <p>Specialized automotive locksmith services for all makes and models</p>
+            </div>
+            <div class="auto-services-grid">
+                <div class="auto-service-item">
+                    <div class="key-icon">🔑</div>
+                    <h3>Car Key Replacement</h3>
+                    <p>Replace lost or broken car keys for any vehicle make and model</p>
+                </div>
+                <div class="auto-service-item">
+                    <div class="key-icon">🚗</div>
+                    <h3>Transponder Keys</h3>
+                    <p>Programming and replacement of transponder keys and fobs</p>
+                </div>
+                <div class="auto-service-item">
+                    <div class="key-icon">🔧</div>
+                    <h3>Ignition Repair</h3>
+                    <p>Professional ignition cylinder repair and replacement</p>
+                </div>
+                <div class="auto-service-item">
+                    <div class="key-icon">🚙</div>
+                    <h3>Smart Key Programming</h3>
+                    <p>Programming for modern smart keys and proximity keys</p>
+                </div>
+                <div class="auto-service-item">
+                    <div class="key-icon">🛡️</div>
+                    <h3>Key Extraction</h3>
+                    <p>Broken key extraction from ignitions and door locks</p>
+                </div>
+                <div class="auto-service-item">
+                    <div class="key-icon">🔒</div>
+                    <h3>Car Lockout Service</h3>
+                    <p>24/7 emergency car lockout assistance without damage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-title">
+                <h2>Customer Reviews</h2>
+                <p>What our clients say about our services</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-text">
+                        "I was locked out of my car at midnight and called SecureLock. They arrived within 20 minutes and had me back in my car in no time. Professional and affordable service!"
+                    </div>
+                    <div class="reviewer">
+                        <div class="reviewer-img" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg');"></div>
+                        <div>
+                            <h4>Michael Johnson</h4>
+                            <p>New York</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-text">
+                        "The technician was knowledgeable and replaced all our office locks with high-security systems. The pricing was transparent with no hidden fees. Highly recommend!"
+                    </div>
+                    <div class="reviewer">
+                        <div class="reviewer-img" style="background-image: url('https://randomuser.me/api/portraits/women/44.jpg');"></div>
+                        <div>
+                            <h4>Sarah Williams</h4>
+                            <p>Chicago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-text">
+                        "After a break-in attempt, I needed my home locks replaced urgently. SecureLock responded immediately and installed new secure locks. Gave me peace of mind!"
+                    </div>
+                    <div class="reviewer">
+                        <div class="reviewer-img" style="background-image: url('https://randomuser.me/api/portraits/men/65.jpg');"></div>
+                        <div>
+                            <h4>Robert Davis</h4>
+                            <p>Los Angeles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Need Emergency Locksmith Service?</h2>
+            <p>Our certified locksmiths are available 24/7 to help with any lockout emergency, security upgrade, or lock repair need.</p>
+            <div class="phone-number" onclick="window.location.href='tel:8559455052'">(855) 945-5052</div>
+            <p>Call us now for immediate assistance</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>SecureLock Locksmith</h3>
+                    <p>Providing reliable and professional locksmith services since 2005. Available 24/7 for all your emergency lock and key needs.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#">Emergency Lockout</a></li>
+                        <li><a href="#">Car Key Replacement</a></li>
+                        <li><a href="#">Key Programming</a></li>
+                        <li><a href="#">Lock Installation</a></li>
+                        <li><a href="#">Security Upgrades</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Phone: <a href="tel:8559455052">(855) 945-5052</a></li>
+                        <li>Email: help@securelock.example</li>
+                        <li>24/7 Emergency Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 SecureLock Locksmith. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Phone number click tracking (optional)
+        document.querySelectorAll('.phone-number, .call-btn').forEach(element => {
+            element.addEventListener('click', function() {
+                // This is where you would add analytics tracking
+                console.log('Phone number clicked: (855) 945-5052');
+            });
+        });
+    </script>
+</body>
+</html>
